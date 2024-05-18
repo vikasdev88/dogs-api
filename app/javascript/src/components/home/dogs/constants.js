@@ -1,0 +1,1 @@
+export const BREED_PATH = `api/v1/dogs/search_breed`
