@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/test/boxer/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 19 May 2024 18:50:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Age:
+      - '0'
+      Vary:
+      - ''
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=73WT2TSlDlzT0%2Fl3nnMwwojm25TzzZUXsunE4Npkk5HgfP02vAdXJNJJohnA9h2CCgy%2B5i%2FZY5SI2rbXhnvOEy5gAYaklPqsj5ewu65Nj1NjcFHCNuoqkMiqVO2YIs7L%2Bueq0vzr"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 886645dfbffb2a4a-CDG
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"No route found for \"GET http:\/\/dog.ceo\/api\/test\/boxer\/images\/random\"
+        with code: 0","code":404}'
+  recorded_at: Sun, 19 May 2024 18:50:29 GMT
+recorded_with: VCR 6.2.0

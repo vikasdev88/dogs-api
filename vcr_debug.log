@@ -1,0 +1,8 @@
+[Cassette: 'fixtures/valid_dog_data'] Initialized with options: {:record=>:new_episodes, :record_on_error=>true, :match_requests_on=>[:method, :uri], :allow_unused_http_interactions=>true, :drop_unused_requests=>false, :serialize_with=>:yaml, :persist_with=>:file_system, :persister_options=>{}}
+[webmock] Handling request: [get https://dog.ceo/hound] (disabled: false)
+  [Cassette: 'fixtures/valid_dog_data'] Initialized HTTPInteractionList with request matchers [:method, :uri] and 1 interaction(s): { [get https://dog.ceo/hound] => [404 "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not F"] }
+  [Cassette: 'fixtures/valid_dog_data'] Checking if [get https://dog.ceo/hound] matches [get https://dog.ceo/hound] using [:method, :uri]
+    [Cassette: 'fixtures/valid_dog_data'] method (matched): current request [get https://dog.ceo/hound] vs [get https://dog.ceo/hound]
+    [Cassette: 'fixtures/valid_dog_data'] uri (matched): current request [get https://dog.ceo/hound] vs [get https://dog.ceo/hound]
+  [Cassette: 'fixtures/valid_dog_data'] Found matching interaction for [get https://dog.ceo/hound] at index 0: [404 "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not F"]
+[webmock] Identified request type (stubbed_by_vcr) for [get https://dog.ceo/hound]
